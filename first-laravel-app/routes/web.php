@@ -18,4 +18,6 @@ Route::get('/', [App\Http\Controllers\PageController::class, 'index']);
 
 Route::get('/hello-world', [App\Http\Controllers\PageController::class, 'helloWorld'])->name('hello-world');
 
+Route::post('/hello-world', [App\Http\Controllers\PageController::class, 'emailSubmitted'])->name('hello-world');
+
 Route::get('/goodbye-world', [App\Http\Controllers\PageController::class, 'goodbyeWorld'])->name('goodbye-world');
