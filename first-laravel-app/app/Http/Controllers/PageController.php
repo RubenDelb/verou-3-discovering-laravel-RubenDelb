@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Symfony\Contracts\Service\Attribute\Required;
 
 class PageController extends Controller
 {
@@ -11,9 +12,17 @@ class PageController extends Controller
         return view('welcome');
     }
 
-    public function helloWorld(Request $request)
+    public function helloWorld()
     {
-        // dd($request->input());
+        return view('hello-world');
+    }
+
+    public function emailSubmitted(Request $request)
+    {
+        $request->validate([
+            'email'=>'required',
+            'password'=>'required'
+        ]);
         return view('hello-world');
     }
 
