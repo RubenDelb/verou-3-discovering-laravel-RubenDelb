@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\PageController;
+// use App\Http\Controllers\PageController; -> can be replaced by "see line 17,19 and 21!"
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [PageController::class, 'index']);
+Route::get('/', [App\Http\Controllers\PageController::class, 'index']);
 
-Route::get('/hello-world', [PageController::class, 'helloWorld'])->name('hello-world');
+Route::get('/hello-world', [App\Http\Controllers\PageController::class, 'helloWorld'])->name('hello-world');
 
-Route::get('/goodbye-world', [PageController::class, 'goodbyeWorld'])->name('goodbye-world');
+Route::get('/goodbye-world', [App\Http\Controllers\PageController::class, 'goodbyeWorld'])->name('goodbye-world');
