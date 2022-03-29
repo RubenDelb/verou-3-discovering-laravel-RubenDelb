@@ -11,8 +11,9 @@ class PageController extends Controller
         return view('welcome');
     }
 
-    public function helloWorld()
+    public function helloWorld(Request $request)
     {
+        dd($request->input());
         return view('hello-world');
     }
 
