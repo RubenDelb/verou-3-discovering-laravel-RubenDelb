@@ -11,6 +11,7 @@
                     <a class="nav-link" href="/">Home</a>
                     <a class="nav-link" href="{{ route('hello-world') }}">Hello-World</a>
                     <a class="nav-link" href="{{ route('goodbye-world') }}">Goodbye-World</a>
+                    <a class="nav-link" href="{{ route('recipes') }}">Recipes</a>
                     {{-- <a class="nav-link disabled">Disabled</a> --}}
                 </div>
             </div>
