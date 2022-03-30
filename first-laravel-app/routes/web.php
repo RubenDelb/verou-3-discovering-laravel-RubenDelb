@@ -1,6 +1,8 @@
 <?php
 
 // use App\Http\Controllers\PageController; -> can be replaced by "see line 17,19 and 21!"
+
+use App\Http\Controllers\RecipeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +20,8 @@ Route::get('/', [App\Http\Controllers\PageController::class, 'index']);
 
 Route::get('/hello-world', [App\Http\Controllers\PageController::class, 'helloWorld'])->name('hello-world');
 
-Route::post('/hello-world', [App\Http\Controllers\PageController::class, 'emailSubmitted'])->name('hello-world');
+Route::post('/hello-world', [App\Http\Controllers\PageController::class, 'emailSubmitted']);
 
 Route::get('/goodbye-world', [App\Http\Controllers\PageController::class, 'goodbyeWorld'])->name('goodbye-world');
+
+Route::get('/recipes', [RecipeController::class, 'getAllRecipes'])->name('recipes');
