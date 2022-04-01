@@ -1,19 +1,12 @@
-    <h1 class="bg-dark text-center" style="color:white">Laravel vs. Ruben</h1>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="/">Home</a>
-                    <a class="nav-link" href="{{ route('hello-world') }}">Hello-World</a>
-                    <a class="nav-link" href="{{ route('goodbye-world') }}">Goodbye-World</a>
-                    <a class="nav-link" href="{{ route('recipes') }}">Recipes</a>
-                    {{-- <a class="nav-link disabled">Disabled</a> --}}
-                </div>
+    <h1 class="bg-green-200 text-center font-bold text-2xl">Laravel vs. Ruben</h1>
+        <div class="container">
+            <div>
+                <nav class="rounded flex justify-around bg-green-100 px-10 py-4 my-2">
+                    <a href="/">Home</a>
+                    <a href="{{ route('hello-world') }}">Hello-World</a>
+                    <a href="{{ route('goodbye-world') }}">Goodbye-World</a>
+                    <a href="{{ route('recipes') }}">Recipes</a>
+                </nav>
             </div>
         </div>
     </nav>

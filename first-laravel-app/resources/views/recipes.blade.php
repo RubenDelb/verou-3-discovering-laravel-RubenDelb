@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('body')
-    <table class="table table-hover table-dark">
+    <table class="bg-pink-100">
         <thead>
             <tr>
                 <th scope="col">Title</th>
