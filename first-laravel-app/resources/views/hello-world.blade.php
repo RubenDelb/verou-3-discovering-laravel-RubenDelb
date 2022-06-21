@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('body')
-    <h2 class="bg-indigo-400">Hello World</h2>
-    <p class="mx-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, nemo magni. Soluta voluptatum hic illum rerum
+    <h2 class="bg-green-400 text-center">Hello World</h2>
+    <p class="mx-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, nemo magni. Soluta voluptatum
+        hic illum rerum
         voluptatem, debitis iusto ratione inventore, corporis, voluptate molestiae vero. Ipsa dolorem ut iure nihil!</p>
     {{ $errors }}
     <form action="" method="POST">
